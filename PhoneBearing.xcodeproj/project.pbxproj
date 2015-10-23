@@ -15,6 +15,13 @@
 		C46078481BDAD95400F5CEB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46078461BDAD95400F5CEB0 /* LaunchScreen.storyboard */; };
 		C46078531BDAD95400F5CEB0 /* PhoneBearingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46078521BDAD95400F5CEB0 /* PhoneBearingTests.m */; };
 		C460785E1BDAD95400F5CEB0 /* PhoneBearingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C460785D1BDAD95400F5CEB0 /* PhoneBearingUITests.m */; };
+		C4B2625B1BDAF362009334EE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B262591BDAF362009334EE /* Interface.storyboard */; };
+		C4B2625D1BDAF362009334EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B2625C1BDAF362009334EE /* Assets.xcassets */; };
+		C4B262641BDAF362009334EE /* WatchBearing Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C4B262631BDAF362009334EE /* WatchBearing Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4B2626A1BDAF362009334EE /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B262691BDAF362009334EE /* InterfaceController.m */; };
+		C4B2626D1BDAF362009334EE /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B2626C1BDAF362009334EE /* ExtensionDelegate.m */; };
+		C4B2626F1BDAF362009334EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B2626E1BDAF362009334EE /* Assets.xcassets */; };
+		C4B262731BDAF362009334EE /* WatchBearing.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C4B262571BDAF362009334EE /* WatchBearing.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +39,46 @@
 			remoteGlobalIDString = C46078341BDAD95400F5CEB0;
 			remoteInfo = PhoneBearing;
 		};
+		C4B262651BDAF362009334EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C460782D1BDAD95400F5CEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B262621BDAF362009334EE;
+			remoteInfo = "WatchBearing Extension";
+		};
+		C4B262711BDAF362009334EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C460782D1BDAD95400F5CEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B262561BDAF362009334EE;
+			remoteInfo = WatchBearing;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4B262791BDAF362009334EE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4B262641BDAF362009334EE /* WatchBearing Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B2627B1BDAF362009334EE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C4B262731BDAF362009334EE /* WatchBearing.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C46078351BDAD95400F5CEB0 /* PhoneBearing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneBearing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +97,17 @@
 		C46078591BDAD95400F5CEB0 /* PhoneBearingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneBearingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C460785D1BDAD95400F5CEB0 /* PhoneBearingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneBearingUITests.m; sourceTree = "<group>"; };
 		C460785F1BDAD95400F5CEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B262571BDAF362009334EE /* WatchBearing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchBearing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B2625A1BDAF362009334EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C4B2625C1BDAF362009334EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4B2625E1BDAF362009334EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B262631BDAF362009334EE /* WatchBearing Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchBearing Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B262681BDAF362009334EE /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		C4B262691BDAF362009334EE /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		C4B2626B1BDAF362009334EE /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		C4B2626C1BDAF362009334EE /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		C4B2626E1BDAF362009334EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4B262701BDAF362009334EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +132,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4B262601BDAF362009334EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +148,8 @@
 				C46078371BDAD95400F5CEB0 /* PhoneBearing */,
 				C46078511BDAD95400F5CEB0 /* PhoneBearingTests */,
 				C460785C1BDAD95400F5CEB0 /* PhoneBearingUITests */,
+				C4B262581BDAF362009334EE /* WatchBearing */,
+				C4B262671BDAF362009334EE /* WatchBearing Extension */,
 				C46078361BDAD95400F5CEB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +160,8 @@
 				C46078351BDAD95400F5CEB0 /* PhoneBearing.app */,
 				C460784E1BDAD95400F5CEB0 /* PhoneBearingTests.xctest */,
 				C46078591BDAD95400F5CEB0 /* PhoneBearingUITests.xctest */,
+				C4B262571BDAF362009334EE /* WatchBearing.app */,
+				C4B262631BDAF362009334EE /* WatchBearing Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +208,29 @@
 			path = PhoneBearingUITests;
 			sourceTree = "<group>";
 		};
+		C4B262581BDAF362009334EE /* WatchBearing */ = {
+			isa = PBXGroup;
+			children = (
+				C4B262591BDAF362009334EE /* Interface.storyboard */,
+				C4B2625C1BDAF362009334EE /* Assets.xcassets */,
+				C4B2625E1BDAF362009334EE /* Info.plist */,
+			);
+			path = WatchBearing;
+			sourceTree = "<group>";
+		};
+		C4B262671BDAF362009334EE /* WatchBearing Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C4B262681BDAF362009334EE /* InterfaceController.h */,
+				C4B262691BDAF362009334EE /* InterfaceController.m */,
+				C4B2626B1BDAF362009334EE /* ExtensionDelegate.h */,
+				C4B2626C1BDAF362009334EE /* ExtensionDelegate.m */,
+				C4B2626E1BDAF362009334EE /* Assets.xcassets */,
+				C4B262701BDAF362009334EE /* Info.plist */,
+			);
+			path = "WatchBearing Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +241,12 @@
 				C46078311BDAD95400F5CEB0 /* Sources */,
 				C46078321BDAD95400F5CEB0 /* Frameworks */,
 				C46078331BDAD95400F5CEB0 /* Resources */,
+				C4B2627B1BDAF362009334EE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4B262721BDAF362009334EE /* PBXTargetDependency */,
 			);
 			name = PhoneBearing;
 			productName = PhoneBearing;
@@ -196,6 +289,40 @@
 			productReference = C46078591BDAD95400F5CEB0 /* PhoneBearingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C4B262561BDAF362009334EE /* WatchBearing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B2627A1BDAF362009334EE /* Build configuration list for PBXNativeTarget "WatchBearing" */;
+			buildPhases = (
+				C4B262551BDAF362009334EE /* Resources */,
+				C4B262791BDAF362009334EE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4B262661BDAF362009334EE /* PBXTargetDependency */,
+			);
+			name = WatchBearing;
+			productName = WatchBearing;
+			productReference = C4B262571BDAF362009334EE /* WatchBearing.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C4B262621BDAF362009334EE /* WatchBearing Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B262781BDAF362009334EE /* Build configuration list for PBXNativeTarget "WatchBearing Extension" */;
+			buildPhases = (
+				C4B2625F1BDAF362009334EE /* Sources */,
+				C4B262601BDAF362009334EE /* Frameworks */,
+				C4B262611BDAF362009334EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchBearing Extension";
+			productName = "WatchBearing Extension";
+			productReference = C4B262631BDAF362009334EE /* WatchBearing Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +344,13 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = C46078341BDAD95400F5CEB0;
 					};
+					C4B262561BDAF362009334EE = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = RJ8GXSL3AB;
+					};
+					C4B262621BDAF362009334EE = {
+						CreatedOnToolsVersion = 7.1;
+					};
 				};
 			};
 			buildConfigurationList = C46078301BDAD95400F5CEB0 /* Build configuration list for PBXProject "PhoneBearing" */;
@@ -235,6 +369,8 @@
 				C46078341BDAD95400F5CEB0 /* PhoneBearing */,
 				C460784D1BDAD95400F5CEB0 /* PhoneBearingTests */,
 				C46078581BDAD95400F5CEB0 /* PhoneBearingUITests */,
+				C4B262561BDAF362009334EE /* WatchBearing */,
+				C4B262621BDAF362009334EE /* WatchBearing Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +397,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B262551BDAF362009334EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B2625D1BDAF362009334EE /* Assets.xcassets in Resources */,
+				C4B2625B1BDAF362009334EE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B262611BDAF362009334EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B2626F1BDAF362009334EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +446,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4B2625F1BDAF362009334EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B2626D1BDAF362009334EE /* ExtensionDelegate.m in Sources */,
+				C4B2626A1BDAF362009334EE /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -305,6 +467,16 @@
 			isa = PBXTargetDependency;
 			target = C46078341BDAD95400F5CEB0 /* PhoneBearing */;
 			targetProxy = C460785A1BDAD95400F5CEB0 /* PBXContainerItemProxy */;
+		};
+		C4B262661BDAF362009334EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B262621BDAF362009334EE /* WatchBearing Extension */;
+			targetProxy = C4B262651BDAF362009334EE /* PBXContainerItemProxy */;
+		};
+		C4B262721BDAF362009334EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B262561BDAF362009334EE /* WatchBearing */;
+			targetProxy = C4B262711BDAF362009334EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,6 +495,14 @@
 				C46078471BDAD95400F5CEB0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C4B262591BDAF362009334EE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4B2625A1BDAF362009334EE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,6 +668,68 @@
 			};
 			name = Release;
 		};
+		C4B262741BDAF362009334EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = WatchBearing_Extension;
+				INFOPLIST_FILE = WatchBearing/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.cryptonym.PhoneBearing.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C4B262751BDAF362009334EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = WatchBearing_Extension;
+				INFOPLIST_FILE = WatchBearing/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.cryptonym.PhoneBearing.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C4B262761BDAF362009334EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchBearing Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.cryptonym.PhoneBearing.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C4B262771BDAF362009334EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchBearing Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.cryptonym.PhoneBearing.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -526,6 +768,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C4B262781BDAF362009334EE /* Build configuration list for PBXNativeTarget "WatchBearing Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B262761BDAF362009334EE /* Debug */,
+				C4B262771BDAF362009334EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4B2627A1BDAF362009334EE /* Build configuration list for PBXNativeTarget "WatchBearing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B262741BDAF362009334EE /* Debug */,
+				C4B262751BDAF362009334EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
