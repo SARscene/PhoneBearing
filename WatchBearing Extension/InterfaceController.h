@@ -6,9 +6,10 @@
 //  Copyright © 2015 Cryptonym Ltd. All rights reserved.
 //
 
-#import <WatchKit/WatchKit.h>
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import WatchKit;
+@import WatchConnectivity;
 
-@interface InterfaceController : WKInterfaceController
+@interface InterfaceController : WKInterfaceController <WCSessionDelegate>
 
 @end

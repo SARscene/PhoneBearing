@@ -334,7 +334,7 @@
 				TargetAttributes = {
 					C46078341BDAD95400F5CEB0 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = RJ8GXSL3AB;
+						DevelopmentTeam = E69RB7V2B3;
 					};
 					C460784D1BDAD95400F5CEB0 = {
 						CreatedOnToolsVersion = 7.1;
@@ -346,10 +346,11 @@
 					};
 					C4B262561BDAF362009334EE = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = RJ8GXSL3AB;
+						DevelopmentTeam = E69RB7V2B3;
 					};
 					C4B262621BDAF362009334EE = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = E69RB7V2B3;
 					};
 				};
 			};
@@ -705,6 +706,7 @@
 		C4B262761BDAF362009334EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "WatchBearing Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.cryptonym.PhoneBearing.watchkitapp.watchkitextension;
@@ -719,6 +721,7 @@
 		C4B262771BDAF362009334EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "WatchBearing Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.cryptonym.PhoneBearing.watchkitapp.watchkitextension;
