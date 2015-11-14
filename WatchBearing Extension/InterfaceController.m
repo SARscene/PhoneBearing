@@ -47,11 +47,15 @@
 
 - (IBAction)tap {
     WKHapticType tapType;
-    if ([self.bearingValue doubleValue] > 180.0f) {
+    double doubleBearing = [self.bearingValue doubleValue];
+    if (doubleBearing > 7.5 && doubleBearing < 180.0f) {
+        tapType = WKHapticTypeStop;
+    } else if ( doubleBearing > 180 && doubleBearing < (360 - 7.5)) {
         tapType = WKHapticTypeStart;
     } else {
-        tapType = WKHapticTypeStop;
+        tapType = WKHapticTypeClick;
     }
+    
     [[WKInterfaceDevice currentDevice] playHaptic:tapType];
 }
 
